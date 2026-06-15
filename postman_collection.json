@@ -1,0 +1,62 @@
+{
+  "info": {
+    "name": "Voice Q&A Service",
+    "description": "智能语音问答服务 API 测试集合",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "文本问答",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "text",
+              "value": "今天的农历日期是什么",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url}}/ask",
+          "host": ["{{base_url}}"],
+          "path": ["ask"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "语音问答（上传音频文件）",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "audio_file",
+              "type": "file",
+              "src": "C:/Users/20801/Desktop/AI_Project/PBL/PBL_project2.0/test1.wav"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url}}/ask",
+          "host": ["{{base_url}}"],
+          "path": ["ask"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8001",
+      "type": "string"
+    }
+  ]
+}
