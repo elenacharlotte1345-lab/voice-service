@@ -26,7 +26,7 @@ graph LR
 
 1. **克隆仓库**（或直接复制文件）
    ```bash
-   git clone https://github.com/your-repo/voice-service.git
+   git clone https://github.com/elenacharlotte1345-lab/voice-service.git
    cd voice-service
    ```
 
@@ -185,7 +185,3 @@ kill -9 <PID>
 - [ ] 支持流式返回 TTS 音频分块
 - [ ] 添加请求队列和并发限制
 - [ ] 集成 OpenAI 作为备选 LLM
-
-## 📄 License
-
-本项目采用 MIT 许可证。
